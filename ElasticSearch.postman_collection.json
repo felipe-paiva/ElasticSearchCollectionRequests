@@ -1,0 +1,33 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ElasticSearch",
+		"_postman_id": "1d70e4fd-ee74-71c9-eb65-3391b1b7e7d0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Buscar todos os index com o tipo Songs ",
+			"request": {
+				"url": "http://localhost:9200/my_deezer/song/_search",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "A TAG _search no final do endereço da request vai fazer com que o elasticsearch me traga todos os documentos que estão sobre o index e que tenham o tipo Songs"
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar por ID",
+			"request": {
+				"url": "http://localhost:9200/my_deezer/song/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "Neste caso o documento retornado será o documento cujo id faça match com o da requisição"
+			},
+			"response": []
+		}
+	]
+}
